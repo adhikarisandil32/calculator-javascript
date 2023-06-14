@@ -85,7 +85,7 @@ class Calculator{
         else if(symbol === "÷"){
             this.previousOperand = this.previousOperand.slice(0, this.previousOperand.length-1)+"/";
         }
-        this.result = eval(this.previousOperand+this.currentOperand);
+        this.result = (eval(this.previousOperand+this.currentOperand)).toString();
     }
 
     updateDisplay(){
