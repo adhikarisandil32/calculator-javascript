@@ -57,7 +57,7 @@ class Calculator{
 
     appendNumber(number){
         if(this.currentOperand.length >= 12){
-            alert("Number cannot have more than 12 digits");
+            alert("cannot exceed 12 digits");
             return
         }
         //if . is presesnt once, it cannot be again in the same operand
